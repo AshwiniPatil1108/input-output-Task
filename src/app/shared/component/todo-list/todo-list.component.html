@@ -1,0 +1,17 @@
+
+<ul class="list-group" *ngIf ="todoData.length > 0; else noTodos">
+    <li class="list-group-item text-white font-weight-bold"
+    [ngClass]="{
+        'bg-success':todo.todoRating >= 4,
+        'bg-warning': todo.todoRating >= 3 && todo.todoRating < 4,
+        'bg-danger':todo.todoRating < 3
+    }"
+
+        *ngFor="let todo of todoData"
+    >
+        {{todo.todoItem}}
+    </li>
+</ul>
+<ng-template #noTodos>
+    <p class="alert alert-info">No Todo Item!!!</p>
+</ng-template>

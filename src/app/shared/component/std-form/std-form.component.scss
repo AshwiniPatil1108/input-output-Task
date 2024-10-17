@@ -1,0 +1,11 @@
+.ng-submitted{
+    .ng-invalid{
+        border: 2px solid red;
+    }
+}
+.card{
+    background-image: linear-gradient(#5bbff9, #064e78);
+    color: white;
+    border-radius: 4% 4% 4% 4%;
+    box-shadow: 3px, 4px, 10px, 2px #424242;
+}
